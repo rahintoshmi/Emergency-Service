@@ -21,9 +21,9 @@
                    
                 </div>
                 <div class="flex">
-                    <div class="flex justify-center items-center rounded-[12px] md:rounded-[50px] py-2 md:py-3 px-3 md:px-5 bg-[#41ff6b1a] me-1 md:me-3"><h4 class="me-1 md:me-3 font-inter font-black text-[#000] text-base">0</h4><img src="./assets/heart.png" alt="" class="w-[30px] h-[30px]"></div>
-                    <div class="flex justify-center items-center rounded-[12px] md:rounded-[50px] py-2 md:py-3 px-3 md:px-5 bg-[#41ff6b1a] me-1 md:me-3"><h4 class="me-1 md:me-3 font-inter font-black text-[#000] text-base">0</h4><img src="./assets/coin.png" alt="" class="w-[30px] h-[30px]"></div>
-                    <div class="flex justify-center items-center rounded-[12px] md:rounded-[50px] py-2 md:py-3 px-3 md:px-9  bg-[#00a63e]"><h4 class="me-1 md:me-3 font-inter font-semibold text-[#fff] text-base">0</h4><p class="font-semibold text-[#fff] text-base">Copy</p></div>
+                    <div class="flex justify-center items-center rounded-[12px] md:rounded-[50px] py-2 md:py-3 px-3 md:px-5 bg-[#41ff6b1a] me-1 md:me-3"><h4 id="availableHeart" class="me-1 md:me-3 font-inter font-black text-[#000] text-base">0</h4><img src="./assets/heart.png" alt="" class="w-[30px] h-[30px]"></div>
+                    <div class="flex justify-center items-center rounded-[12px] md:rounded-[50px] py-2 md:py-3 px-3 md:px-5 bg-[#41ff6b1a] me-1 md:me-3"><h4 id="availableCoin" class="me-1 md:me-3 font-inter font-black text-[#000] text-base">100</h4><img src="./assets/coin.png" alt="" class="w-[30px] h-[30px]"></div>
+                    <div class="flex justify-center items-center rounded-[12px] md:rounded-[50px] py-2 md:py-3 px-3 md:px-9  bg-[#00a63e]"><h4 id="countCopy" class="me-1 md:me-3 font-inter font-semibold text-[#fff] text-base">0</h4><p class="font-semibold text-[#fff] text-base">Copy</p></div>
                 </div>
             </div>
         </nav>
@@ -45,150 +45,146 @@
                 <div class="px-4 py-8 rounded-xl shadow-[0_2px_3px_0_rgba(0,0,0,0.15)] bg-[#fff]">
                     <div class="flex justify-between items-center">
                        <div class="rounded-2xl bg-[#ffe3e2] p-3"><img src="./assets/emergency.png" alt="" class="w-8 h-8"></div>
-                       <div><i class="fa-regular fa-heart text-[#5c5c5c]"></i></div>
+                       <div><i class="fa-regular fa-heart text-[#5c5c5c]" id="heartIcon1"></i></div>
                     </div>
-                    <h2 class="font-hind font-bold text-2xl text-[#111] mt-4 mb-1 whitespace-nowrap block">জাতীয় জরুরি সেবা</h2>
+                    <h2 id="servicename1" class="font-hind font-bold text-2xl text-[#111] mt-4 mb-1 whitespace-nowrap block">জাতীয় জরুরি সেবা</h2>
                     <p class="font-roboto font-normal text-lg text-[#5c5c5c]">National Emergency</p>
-                    <h1 class="font-roboto text-3xl font-bold text-[#111] mt-6">999</h1>
+                    <h1 id="serviceNumber1" class="font-roboto text-3xl font-bold text-[#111] mt-6">999</h1>
                     <div class="w-24 text-center rounded-[9999px] py-[6px] px-2 bg-[#f2f2f2] mb-6"> <h5 class="font-hind font-normal text-lg text-[#5c5c5c]">সার্বজনীন</h5></div>
                     <div class="flex">
-                        <div class="rounded-lg border-[1px] border-[#d4d6d5] py-[10px] px-[25px] me-2"><a href="#" class="font-roboto font-normal text-base text-[#5c5c5c]"><i class="fa-regular fa-copy text-[#5c5c5c] rotate-90 me-1"></i>Copy</a></div>
-                        <div class="rounded-lg border-[1px] bg-[#00a63e] border-[#00a63e] py-[10px] px-[30px]"><a href="#" class="font-roboto font-normal text-base text-[#fff]"><i class="fa-solid fa-phone text-[#fff] me-1"></i>Call</a></div>
+                        <div id="copyBtn1" class="rounded-lg border-[1px] border-[#d4d6d5] py-[10px] px-[25px] me-2"><a href="#" class="font-roboto font-normal text-base text-[#5c5c5c]"><i class="fa-regular fa-copy text-[#5c5c5c] rotate-90 me-1"></i>Copy</a></div>
+                        <div id="callButton1" class="rounded-lg border-[1px] bg-[#00a63e] border-[#00a63e] py-[10px] px-[30px]"><a href="#" class="font-roboto font-normal text-base text-[#fff]"><i class="fa-solid fa-phone text-[#fff] me-1"></i>Call</a></div>
                     </div>
                 </div>
                 <div class=" px-4 py-8 rounded-xl shadow-[0_2px_3px_0_rgba(0,0,0,0.15)] bg-[#fff]">
                     <div class="flex justify-between items-center">
                        <div class="rounded-2xl bg-[#ffe3e2] p-3"><img src="./assets/police.png" alt="" class="w-8 h-8"></div>
-                       <div><i class="fa-regular fa-heart text-[#5c5c5c]"></i></div>
+                       <div><i class="fa-regular fa-heart text-[#5c5c5c]" id="heartIcon2"></i></div>
                     </div>
-                    <h2 class="font-hind font-bold text-2xl text-[#111] mt-4 mb-1">পুলিশ</h2>
+                    <h2  id="servicename2" class="font-hind font-bold text-2xl text-[#111] mt-4 mb-1">পুলিশ</h2>
                     <p class="font-roboto font-normal text-lg text-[#5c5c5c]">Police</p>
-                    <h1 class="font-roboto text-3xl font-bold text-[#111] mt-6">999</h1>
+                    <h1 id="serviceNumber2" class="font-roboto text-3xl font-bold text-[#111] mt-6">999</h1>
                     <div class="w-16 text-center rounded-[9999px] py-[6px] px-2 bg-[#f2f2f2] mb-6"> <h5 class="font-hind font-normal text-lg text-[#5c5c5c]">পুলিশ</h5></div>
                    <div class="flex">
-                        <div class="rounded-lg border-[1px] border-[#d4d6d5] py-[10px] px-[25px] me-2"><a href="#" class="font-roboto font-normal text-base text-[#5c5c5c]"><i class="fa-regular fa-copy text-[#5c5c5c] rotate-90 me-1"></i>Copy</a></div>
-                        <div class="rounded-lg border-[1px] bg-[#00a63e] border-[#00a63e] py-[10px] px-[30px]"><a href="#" class="font-roboto font-normal text-base text-[#fff]"><i class="fa-solid fa-phone text-[#fff] me-1"></i>Call</a></div>
+                        <div id="copyBtn2"  class="rounded-lg border-[1px] border-[#d4d6d5] py-[10px] px-[25px] me-2"><a href="#" class="font-roboto font-normal text-base text-[#5c5c5c]"><i class="fa-regular fa-copy text-[#5c5c5c] rotate-90 me-1"></i>Copy</a></div>
+                        <div id="callButton2" class="rounded-lg border-[1px] bg-[#00a63e] border-[#00a63e] py-[10px] px-[30px]"><a href="#" class="font-roboto font-normal text-base text-[#fff]"><i class="fa-solid fa-phone text-[#fff] me-1"></i>Call</a></div>
                     </div>
                 </div>
                 <div class=" px-4 py-8 rounded-xl shadow-[0_2px_3px_0_rgba(0,0,0,0.15)] bg-[#fff]">
                     <div class="flex justify-between items-center">
                        <div class="rounded-2xl bg-[#ffe3e2] p-3"><img src="./assets/fire-service.png" alt="" class="w-8 h-8"></div>
-                       <div><i class="fa-regular fa-heart text-[#5c5c5c]"></i></div>
+                       <div><i class="fa-regular fa-heart text-[#5c5c5c]" id="heartIcon3"></i></div>
                     </div>
-                    <h2 class="font-hind font-bold text-2xl text-[#111] mt-4 mb-1">ফায়ার সার্ভিস</h2>
+                    <h2 id="servicename3" class="font-hind font-bold text-2xl text-[#111] mt-4 mb-1">ফায়ার সার্ভিস</h2>
                     <p class="font-roboto font-normal text-lg text-[#5c5c5c]">Fire Service</p>
-                    <h1 class="font-roboto text-3xl font-bold text-[#111] mt-6">999</h1>
+                    <h1 id="serviceNumber3" class="font-roboto text-3xl font-bold text-[#111] mt-6">999</h1>
                     <div class="w-16 text-center rounded-[9999px] py-[6px] px-2 bg-[#f2f2f2] mb-6"> <h5 class="font-hind font-normal text-lg text-[#5c5c5c]">ফায়ার</h5></div>
                     <div class="flex">
-                        <div class="rounded-lg border-[1px] border-[#d4d6d5] py-[10px] px-[25px] me-2"><a href="#" class="font-roboto font-normal text-base text-[#5c5c5c]"><i class="fa-regular fa-copy text-[#5c5c5c] rotate-90 me-1"></i>Copy</a></div>
-                        <div class="rounded-lg border-[1px] bg-[#00a63e] border-[#00a63e] py-[10px] px-[30px]"><a href="#" class="font-roboto font-normal text-base text-[#fff]"><i class="fa-solid fa-phone text-[#fff] me-1"></i>Call</a></div>
+                        <div id="copyBtn3"  class="rounded-lg border-[1px] border-[#d4d6d5] py-[10px] px-[25px] me-2"><a href="#" class="font-roboto font-normal text-base text-[#5c5c5c]"><i class="fa-regular fa-copy text-[#5c5c5c] rotate-90 me-1"></i>Copy</a></div>
+                        <div id="callButton3"  class="rounded-lg border-[1px] bg-[#00a63e] border-[#00a63e] py-[10px] px-[30px]"><a href="#" class="font-roboto font-normal text-base text-[#fff]"><i class="fa-solid fa-phone text-[#fff] me-1"></i>Call</a></div>
                     </div>
                 </div>
                 <div class="order-last md:order-none row-span-3 px-4 py-4 rounded-xl shadow-[0_2px_3px_0_rgba(0,0,0,0.15)] bg-[#fff]">
-                    <div class="flex justify-between items-center ">
+                    <div class="flex justify-between items-center">
                         <div class="flex items-center justify-center"><i class="fa-regular fa-clock text-gray-700 pe-2"></i><h2 class="font-roboto font-medium text-xl text-[#111]">Call History</h2></div>
-                        <div class="rounded-[50px] py-3 px-9 bg-[#00a63e]"><a href="#"><p class="font-inter font-semibold text-base text-center text-[#fff]">Clear</p></a></div>
+                        <div id="clear" class="rounded-[50px] py-3 px-9 bg-[#00a63e]"><a href="#"><p class="font-inter font-semibold text-base text-center text-[#fff]">Clear</p></a></div>
                     </div>
-                    <div class="flex justify-between items-center rounded-lg p-3 bg-[#fafafa] mt-4">
-                        <div class="">
-                            <h2 class="font-inter font-normal text-lg text-[#111] mb-2">জাতীয় জরুরি সেবা</h2>
-                            <p class="font-hind font-normal text-base text-[#5c5c5c]">999</p>
-                        </div>
-                        <div class="">
-                            <p class="font-hind font-normal text-lg text-[#111]">11:36:58 AM</p>
-                        </div>
+                    <div id="transactionContainer">
+
                     </div>
+                    
                 </div>
                 <div class=" px-4 py-8 rounded-xl shadow-[0_2px_3px_0_rgba(0,0,0,0.15)] bg-[#fff]">
                     <div class="flex justify-between items-center">
                        <div class="rounded-2xl bg-[#ffe3e2] p-3"><img src="./assets/ambulance.png" alt="" class="w-8 h-8"></div>
-                       <div><i class="fa-regular fa-heart text-[#5c5c5c]"></i></div>
+                       <div><i class="fa-regular fa-heart text-[#5c5c5c]" id="heartIcon4"></i></div>
                     </div>
-                    <h2 class="font-hind font-bold text-2xl text-[#111] mt-4 mb-1">অ্যাম্বুলেন্স</h2>
+                    <h2 id="servicename4" class="font-hind font-bold text-2xl text-[#111] mt-4 mb-1">অ্যাম্বুলেন্স</h2>
                     <p class="font-roboto font-normal text-lg text-[#5c5c5c]">Ambulance</p>
-                    <h1 class="font-roboto text-3xl font-bold text-[#111] mt-6">1994-999999</h1>
+                    <h1  id="serviceNumber4" class="font-roboto text-3xl font-bold text-[#111] mt-6">1994-999999</h1>
                     <div class="w-16 text-center rounded-[9999px] py-[6px] px-2 bg-[#f2f2f2] mb-6"> <h5 class="font-hind font-normal text-lg text-[#5c5c5c]">স্বাস্থ্য</h5></div>
                     <div class="flex">
-                        <div class="rounded-lg border-[1px] border-[#d4d6d5] py-[10px] px-[25px] me-2"><a href="#" class="font-roboto font-normal text-base text-[#5c5c5c]"><i class="fa-regular fa-copy text-[#5c5c5c] rotate-90 me-1"></i>Copy</a></div>
-                        <div class="rounded-lg border-[1px] bg-[#00a63e] border-[#00a63e] py-[10px] px-[30px]"><a href="#" class="font-roboto font-normal text-base text-[#fff]"><i class="fa-solid fa-phone text-[#fff] me-1"></i>Call</a></div>
+                        <div  id="copyBtn4" class="rounded-lg border-[1px] border-[#d4d6d5] py-[10px] px-[25px] me-2"><a href="#" class="font-roboto font-normal text-base text-[#5c5c5c]"><i class="fa-regular fa-copy text-[#5c5c5c] rotate-90 me-1"></i>Copy</a></div>
+                        <div id="callButton4"  class="rounded-lg border-[1px] bg-[#00a63e] border-[#00a63e] py-[10px] px-[30px]"><a href="#" class="font-roboto font-normal text-base text-[#fff]"><i class="fa-solid fa-phone text-[#fff] me-1"></i>Call</a></div>
                     </div>
                 </div>
                 <div class="px-4 py-8 rounded-xl shadow-[0_2px_3px_0_rgba(0,0,0,0.15)] bg-[#fff]">
                     <div class="flex justify-between items-center">
                        <div class="rounded-2xl bg-[#ffe3e2] p-3"><img src="./assets/emergency.png" alt="" class="w-8 h-8"></div>
-                       <div><i class="fa-regular fa-heart text-[#5c5c5c]"></i></div>
+                       <div><i class="fa-regular fa-heart text-[#5c5c5c]" id="heartIcon5"></i></div>
                     </div>
-                    <h2 class="font-hind font-bold text-2xl text-[#111] mt-4 mb-1">নারী ও শিশু সহায়তা</h2>
+                    <h2 id="servicename5" class="font-hind font-bold text-2xl text-[#111] mt-4 mb-1">নারী ও শিশু সহায়তা</h2>
                     <p class="font-roboto font-normal text-lg text-[#5c5c5c]">Women & Child Helpline</p>
-                    <h1 class="font-roboto text-3xl font-bold text-[#111] mt-6">109</h1>
+                    <h1 id="serviceNumber5" class="font-roboto text-3xl font-bold text-[#111] mt-6">109</h1>
                     <div class="w-20 text-center rounded-[9999px] py-[6px] px-2 bg-[#f2f2f2] mb-6"> <h5 class="font-hind font-normal text-lg text-[#5c5c5c]">সহায়তা</h5></div>
                     <div class="flex">
-                        <div class="rounded-lg border-[1px] border-[#d4d6d5] py-[10px] px-[25px] me-2"><a href="#" class="font-roboto font-normal text-base text-[#5c5c5c]"><i class="fa-regular fa-copy text-[#5c5c5c] rotate-90 me-1"></i>Copy</a></div>
-                        <div class="rounded-lg border-[1px] bg-[#00a63e] border-[#00a63e] py-[10px] px-[30px]"><a href="#" class="font-roboto font-normal text-base text-[#fff]"><i class="fa-solid fa-phone text-[#fff] me-1"></i>Call</a></div>
+                        <div id="copyBtn5"  class="rounded-lg border-[1px] border-[#d4d6d5] py-[10px] px-[25px] me-2"><a href="#" class="font-roboto font-normal text-base text-[#5c5c5c]"><i class="fa-regular fa-copy text-[#5c5c5c] rotate-90 me-1"></i>Copy</a></div>
+                        <div id="callButton5"  class="rounded-lg border-[1px] bg-[#00a63e] border-[#00a63e] py-[10px] px-[30px]"><a href="#" class="font-roboto font-normal text-base text-[#fff]"><i class="fa-solid fa-phone text-[#fff] me-1"></i>Call</a></div>
                     </div>
                 </div>
                 <div class=" px-8 py-8 rounded-xl shadow-[0_2px_3px_0_rgba(0,0,0,0.15)] bg-[#fff]">
                     <div class="flex justify-between items-center">
                        <div class="rounded-2xl bg-[#ffe3e2] p-3"><img src="./assets/emergency.png" alt="" class="w-8 h-8"></div>
-                       <div><i class="fa-regular fa-heart text-[#5c5c5c]"></i></div>
+                       <div><i class="fa-regular fa-heart text-[#5c5c5c]" id="heartIcon6"></i></div>
                     </div>
-                    <h2 class="font-hind font-bold text-2xl text-[#111] mt-4 mb-1">দুদক</h2>
+                    <h2 id="servicename6" class="font-hind font-bold text-2xl text-[#111] mt-4 mb-1">দুদক</h2>
                     <p class="font-roboto font-normal text-lg text-[#5c5c5c]">Anti-Corruption</p>
-                    <h1 class="font-roboto text-3xl font-bold text-[#111] mt-6">106</h1>
+                    <h1 id="serviceNumber6" class="font-roboto text-3xl font-bold text-[#111] mt-6">106</h1>
                     <div class="w-20 text-center rounded-[9999px] py-[6px] px-2 bg-[#f2f2f2] mb-6"> <h5 class="font-hind font-normal text-lg text-[#5c5c5c]">সরকারি</h5></div>
                     <div class="flex">
-                        <div class="rounded-lg border-[1px] border-[#d4d6d5] py-[10px] px-[25px] me-2"><a href="#" class="font-roboto font-normal text-base text-[#5c5c5c]"><i class="fa-regular fa-copy text-[#5c5c5c] rotate-90 me-1"></i>Copy</a></div>
-                        <div class="rounded-lg border-[1px] bg-[#00a63e] border-[#00a63e] py-[10px] px-[30px]"><a href="#" class="font-roboto font-normal text-base text-[#fff]"><i class="fa-solid fa-phone text-[#fff] me-1"></i>Call</a></div>
+                        <div id="copyBtn6"  class="rounded-lg border-[1px] border-[#d4d6d5] py-[10px] px-[25px] me-2"><a href="#" class="font-roboto font-normal text-base text-[#5c5c5c]"><i class="fa-regular fa-copy text-[#5c5c5c] rotate-90 me-1"></i>Copy</a></div>
+                        <div id="callButton6"  class="rounded-lg border-[1px] bg-[#00a63e] border-[#00a63e] py-[10px] px-[30px]"><a href="#" class="font-roboto font-normal text-base text-[#fff]"><i class="fa-solid fa-phone text-[#fff] me-1"></i>Call</a></div>
                     </div>
                 </div>
                 <div class=" px-8 py-8 rounded-xl shadow-[0_2px_3px_0_rgba(0,0,0,0.15)] bg-[#fff]">
                     <div class="flex justify-between items-center">
                        <div class="rounded-2xl bg-[#ffe3e2] p-3"><img src="./assets/emergency.png" alt="" class="w-8 h-8"></div>
-                       <div><i class="fa-regular fa-heart text-[#5c5c5c]"></i></div>
+                       <div><i class="fa-regular fa-heart text-[#5c5c5c]" id="heartIcon7"></i></div>
                     </div>
-                    <h2 class="font-hind font-bold text-2xl text-[#111] mt-4 mb-1">বিদ্যুৎ বিভ্রাট</h2>
+                    <h2 id="servicename7" class="font-hind font-bold text-2xl text-[#111] mt-4 mb-1">বিদ্যুৎ বিভ্রাট</h2>
                     <p class="font-roboto font-normal text-lg text-[#5c5c5c]">Electricity Outage</p>
-                    <h1 class="font-roboto text-3xl font-bold text-[#111] mt-6">16216</h1>
+                    <h1 id="serviceNumber7" class="font-roboto text-3xl font-bold text-[#111] mt-6">16216</h1>
                     <div class="w-16 text-center rounded-[9999px] py-[6px] px-2 bg-[#f2f2f2] mb-6"> <h5 class="font-hind font-normal text-lg text-[#5c5c5c]">বিদ্যুৎ</h5></div>
                     <div class="flex">
-                        <div class="rounded-lg border-[1px] border-[#d4d6d5] py-[10px] px-[25px] me-2"><a href="#" class="font-roboto font-normal text-base text-[#5c5c5c]"><i class="fa-regular fa-copy text-[#5c5c5c] rotate-90 me-1"></i>Copy</a></div>
-                        <div class="rounded-lg border-[1px] bg-[#00a63e] border-[#00a63e] py-[10px] px-[30px]"><a href="#" class="font-roboto font-normal text-base text-[#fff]"><i class="fa-solid fa-phone text-[#fff] me-1"></i>Call</a></div>
+                        <div id="copyBtn7"  class="rounded-lg border-[1px] border-[#d4d6d5] py-[10px] px-[25px] me-2"><a href="#" class="font-roboto font-normal text-base text-[#5c5c5c]"><i class="fa-regular fa-copy text-[#5c5c5c] rotate-90 me-1"></i>Copy</a></div>
+                        <div  id="callButton7" class="rounded-lg border-[1px] bg-[#00a63e] border-[#00a63e] py-[10px] px-[30px]"><a href="#" class="font-roboto font-normal text-base text-[#fff]"><i class="fa-solid fa-phone text-[#fff] me-1"></i>Call</a></div>
                     </div>
                 </div>
                 <div class=" px-8 py-8 rounded-xl shadow-[0_2px_3px_0_rgba(0,0,0,0.15)] bg-[#fff]">
                     <div class="flex justify-between items-center">
                        <div class="rounded-2xl bg-[#ffe3e2] p-3"><img src="./assets/emergency.png" alt="" class="w-8 h-8"></div>
-                       <div><i class="fa-regular fa-heart text-[#5c5c5c]"></i></div>
+                       <div><i class="fa-regular fa-heart text-[#5c5c5c]" id="heartIcon8"></i></div>
                     </div>
-                    <h2 class="font-hind font-bold text-2xl text-[#111] mt-4 mb-1">ব্র্যাক</h2>
+                    <h2 id="servicename8" class="font-hind font-bold text-2xl text-[#111] mt-4 mb-1">ব্র্যাক</h2>
                     <p class="font-roboto font-normal text-lg text-[#5c5c5c]">Brac</p>
-                    <h1 class="font-roboto text-3xl font-bold text-[#111] mt-6">16445</h1>
+                    <h1 id="serviceNumber8" class="font-roboto text-3xl font-bold text-[#111] mt-6">16445</h1>
                     <div class="w-20 text-center rounded-[9999px] py-[6px] px-2 bg-[#f2f2f2] mb-6"> <h5 class="font-hind font-normal text-lg text-[#5c5c5c]">এনজিও</h5></div>
                     <div class="flex">
-                        <div class="rounded-lg border-[1px] border-[#d4d6d5] py-[10px] px-[25px] me-2"><a href="#" class="font-roboto font-normal text-base text-[#5c5c5c]"><i class="fa-regular fa-copy text-[#5c5c5c] rotate-90 me-1"></i>Copy</a></div>
-                        <div class="rounded-lg border-[1px] bg-[#00a63e] border-[#00a63e] py-[10px] px-[30px]"><a href="#" class="font-roboto font-normal text-base text-[#fff]"><i class="fa-solid fa-phone text-[#fff] me-1"></i>Call</a></div>
+                        <div id="copyBtn8"  class="rounded-lg border-[1px] border-[#d4d6d5] py-[10px] px-[25px] me-2"><a href="#" class="font-roboto font-normal text-base text-[#5c5c5c]"><i class="fa-regular fa-copy text-[#5c5c5c] rotate-90 me-1"></i>Copy</a></div>
+                        <div  id="callButton8" class="rounded-lg border-[1px] bg-[#00a63e] border-[#00a63e] py-[10px] px-[30px]"><a href="#" class="font-roboto font-normal text-base text-[#fff]"><i class="fa-solid fa-phone text-[#fff] me-1"></i>Call</a></div>
                     </div>
                 </div>
                 <div class=" px-8 py-8 rounded-xl shadow-[0_2px_3px_0_rgba(0,0,0,0.15)] bg-[#fff]">
                     <div class="flex justify-between items-center">
                        <div class="rounded-2xl bg-[#ffe3e2] p-3"><img src="./assets/emergency.png" alt="" class="w-8 h-8"></div>
-                       <div><i class="fa-regular fa-heart text-[#5c5c5c]"></i></div>
+                       <div><i class="fa-regular fa-heart text-[#5c5c5c]" id="heartIcon9"></i></div>
                     </div>
-                    <h2 class="font-hind font-bold text-2xl text-[#111] mt-4 mb-1">বাংলাদেশ রেলওয়ে</h2>
+                    <h2 id="servicename9" class="font-hind font-bold text-2xl text-[#111] mt-4 mb-1">বাংলাদেশ রেলওয়ে</h2>
                     <p class="font-roboto font-normal text-lg text-[#5c5c5c]">Bangladesh Railway</p>
-                    <h1 class="font-roboto text-3xl font-bold text-[#111] mt-6">163</h1>
+                    <h1 id="serviceNumber9" class="font-roboto text-3xl font-bold text-[#111] mt-6">163</h1>
                     <div class="w-20 text-center rounded-[9999px] py-[6px] px-2 bg-[#f2f2f2] mb-6"> <h5 class="font-hind font-normal text-lg text-[#5c5c5c]">পরিবহন</h5></div>
                     <div class="flex">
-                        <div class="rounded-lg border-[1px] border-[#d4d6d5] py-[10px] px-[25px] me-2"><a href="#" class="font-roboto font-normal text-base text-[#5c5c5c]"><i class="fa-regular fa-copy text-[#5c5c5c] rotate-90 me-1"></i>Copy</a></div>
-                        <div class="rounded-lg border-[1px] bg-[#00a63e] border-[#00a63e] py-[10px] px-[30px]"><a href="#" class="font-roboto font-normal text-base text-[#fff]"><i class="fa-solid fa-phone text-[#fff] me-1"></i>Call</a></div>
+                        <div id="copyBtn9"  class="rounded-lg border-[1px] border-[#d4d6d5] py-[10px] px-[25px] me-2"><a href="#" class="font-roboto font-normal text-base text-[#5c5c5c]"><i class="fa-regular fa-copy text-[#5c5c5c] rotate-90 me-1"></i>Copy</a></div>
+                        <div id="callButton9"  class="rounded-lg border-[1px] bg-[#00a63e] border-[#00a63e] py-[10px] px-[30px]"><a href="#" class="font-roboto font-normal text-base text-[#fff]"><i class="fa-solid fa-phone text-[#fff] me-1"></i>Call</a></div>
                     </div>
                 </div>
                
             </div>
         </section>
-        
-    
-    
     </main>
+
+
+
+    <script src="./script.js"></script>
 </body>
 </html>
